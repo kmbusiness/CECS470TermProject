@@ -49,7 +49,7 @@
     <div class="container">
       <section id="dentist-info">
         <div class="first">
-          <a href="#">
+          <a href="aboutJohn.php">
           <i class="fa fa-user-md fa-5x"></i>
       		<h2>ABOUT US</h2></a>
       	</div>
@@ -69,10 +69,10 @@
       <section id="dentist-service">
         <div class="left_col">
           <div>
-            <a href="#"><img src="images/services.png" height="200px" width="200px"></a>
+            <a href="procedure.php"><img src="images/services.png" height="200px" width="200px"></a>
             <h2>SERVICES</h2>
             <p>Learn more about our what we do!</p>
-            <a href="#"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
+            <a href="procedure.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
 
         </div>
