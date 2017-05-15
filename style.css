@@ -1,3 +1,4 @@
+/*---------------------- Allen's CSS ------------------------------*/
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -7,35 +8,311 @@ ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
     overflow: hidden;
-    background-color: #333;
+    background-color: #fff;
+}
+
+.topnav img {
+  width: 7%;
+  vertical-align: middle;
+}
+
+.topnav span {
+  display: block;
 }
 
 ul.topnav li {
-  float: left;
+  display: inline;
 }
 
 ul.topnav li a {
     display: block;
-    color: white;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #111;
-}
-
-ul.topnav li a.active {
-  background-color: #4CAF50;
 }
 
 ul.topnav li.right {
   float: right;
 }
 
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+.dentist-banner {
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+  display: flex;
+  position: relative;
 }
+
+.log {
+  float: left;
+}
+
+.dentist-signup {
+    float: left;
+    position: absolute;
+    margin: 2.5%
+}
+
+.dentist-signup h2 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.dentist-signup p {
+  text-align: center;
+}
+
+.dentist-banner img {
+  width: 100%;
+}
+
+.dentist-banner form {
+  display: block;
+  margin: 5% 10%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color: #FFC107;
+    color: #000;
+}
+
+.signinbtn {
+    float: left;
+    width: 50%;
+}
+
+.container-signup {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+  padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+
+section {
+  clear: both;
+}
+
+.first {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+.second {
+	width: 294px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+.third {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+
+#dentist-info div {
+  text-align: center;
+}
+
+#dentist-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper {
+  width:960px;
+  margin: 15% auto;
+}
+
+#dentist-service div {
+  text-align: center;
+}
+
+.left_col {
+   float:left;
+   width:400px;
+}
+.right_col {
+   float:right;
+   width:400px;
+}
+
+.right_col div {
+  clear: left;
+}
+
+#dentist-service img {
+  float: left;
+}
+
+#dentist-service a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+
+	.container {
+		width: 94%;
+	}
+	.first {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	.second {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	.third {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+
+	.first {
+		width: auto;
+		float: none;
+	}
+
+	.second {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	.third {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	.third {
+		display: none;
+	}
+
+}
+
+/*----------------------John's CSS ------------------------------*/
+.ontheleft
+{
+  padding: 15px;
+  width:50%;
+  float: left;
+}
+
+.ontheright
+{
+  width:40%;
+  float: right;
+}
+
+.onthebottom
+{
+  clear: both;
+}
+
+.ontheright img
+{
+  width:350px; 
+  height: auto;
+}
+
+.assist img
+{
+  clear: right;
+  width:550px; 
+  height: auto;
+  margin-top: 50px;
+}
+
+/*----------------------Chi's CSS ------------------------------*/
+
+
+
+
+
+
+/*----------------------Vinnie's CSS ------------------------------*/
+
+
+
+
+
+
+/*----------------------Alex's CSS ------------------------------*/
+.error-warning
+{
+  color: red;
+}
+
+.success-warning
+{
+  color: green;
+}
+
