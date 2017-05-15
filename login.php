@@ -56,7 +56,7 @@ if (password_verify($pw, $ret_pw[0])) {
 	$_SESSION['login_status'] = "login_successfull";
 	//update login_email sessions
 	$_SESSION['login_email'] = $email;
-	$prev_location = "Location: /finalproject/" . $prev_page;
+	$prev_location = "Location: " . $prev_page;
 	header($prev_location);
 
 
@@ -65,7 +65,7 @@ if (password_verify($pw, $ret_pw[0])) {
 	mysqli_close($conn);
 	$_SESSION['login_status'] = "login_error";
 	$login_error = '1';
-	$error_string = "Location: /finalproject/" . $prev_page . "?errors=" . $email_empty . $pw_empty . $login_error . "email=" . $email . $ret_pw[0];
+	$error_string = "Location: " . $prev_page . "?errors=" . $email_empty . $pw_empty . $login_error . "email=" . $email . $ret_pw[0];
 	header($error_string);
 }
 

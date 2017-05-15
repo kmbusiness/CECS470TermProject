@@ -50,7 +50,7 @@ if (isset($_SESSION['login_email']) )
 }
 else {
 	mysqli_close($conn);
-	$prev_location = "Location: /finalproject/" . $prev_page . "?errors=10";
+	$prev_location = "Location: " . $prev_page . "?errors=10";
 	header($prev_location);
 }
 
@@ -80,10 +80,10 @@ if(mysqli_num_rows($result) == 1) {
 	mysqli_free_result($result);
 
 	$statement_insert = '
-		INSERT INTO cecs470og4.appointment (userID, aTime, aDate, aStatus, aType) 
-		VALUES 
-		('.$user_id.', 
-		"'.$appointment_time.'", 
+		INSERT INTO cecs470og4.appointment (userID, aTime, aDate, aStatus, aType)
+		VALUES
+		('.$user_id.',
+		"'.$appointment_time.'",
 		"'.$appointment_date.'",
 		0,
 		"'.$appointment_type.'");';
@@ -91,13 +91,13 @@ if(mysqli_num_rows($result) == 1) {
 	if($result) {
 		// mysqli_free_result($result);
 		mysqli_close($conn);
-		$prev_location = "Location: /finalproject/" . $prev_page . "?errors=00";
+		$prev_location = "Location: " . $prev_page . "?errors=00";
 		header($prev_location);
 
 	}
 	else {
 		mysqli_close($conn);
-		$prev_location = "Location: /finalproject/" . $prev_page . "?errors=01";
+		$prev_location = "Location: " . $prev_page . "?errors=01";
 		header($prev_location);
 	}
 	// echo $result;

@@ -9,7 +9,7 @@ $prev_page = $_SESSION['prev_page'];
 session_unset();
 setcookie("PHPSESSID", "", time() - 3600);
 $_SESSION['login_status'] = "logged_out";
-$prev_location = "Location: /finalproject/" . $prev_page;
+$prev_location = "Location: /";
 header($prev_location);
 
 ?>
