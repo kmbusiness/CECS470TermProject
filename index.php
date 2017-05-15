@@ -18,9 +18,9 @@
       <div class="dentist-signup">
         <div class="log">
           <h2>Sign Into Your <br> Account!</h2>
-          <p><i>Don't have an account?</i><br>
-            <button type="submit" class="signupbtn">SIGN UP!</button>
+          <p><i>Don't have an account?</i>
           </p>
+          <a class="signupbtn" href="signup.php">SIGN UP!</a>
 
         </div>
         <div class="log">
@@ -78,10 +78,10 @@
         </div>
         <div class="right_col">
           <div>
-            <a href="#"><img src="images/appointments.png" height="200" width="200"></a>
+            <a href="appointments.php"><img src="images/appointments.png" height="200" width="200"></a>
             <h2>APPOINTMENTS</h2>
             <p>Schedule your appointment here!</p>
-            <a href="#"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
+            <a href="appointments.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>

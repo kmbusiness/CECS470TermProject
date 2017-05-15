@@ -1,3 +1,4 @@
+#!/usr/local/php5/bin/php-cgi
 <?php
 require_once("DBConn.php");
 session_start();
@@ -140,14 +141,14 @@ else {
 	$pw = password_hash($pw, PASSWORD_DEFAULT);
 	//use user info to create a new user
 	$statement_insert = '
-		INSERT INTO cecs470og4.users (firstName, lastName, gender, birthday, pw, admin, email) 
-		VALUES 
-		("'.$first_name.'", 
-		"'.$last_name.'", 
+		INSERT INTO cecs470og4.users (firstName, lastName, gender, birthday, pw, admin, email)
+		VALUES
+		("'.$first_name.'",
+		"'.$last_name.'",
 		"'.$gender.'",
 		"'.$birthday.'",
 		"'.$pw.'",
-		0, 
+		0,
 		"'.$email.'");';
 	$result = mysqli_query($conn, $statement_insert);
 	// print_r($result);

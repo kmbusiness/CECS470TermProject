@@ -1,3 +1,4 @@
+#!/usr/local/php5/bin/php-cgi
 <?php
 require_once("DBConn.php");
 session_start();
