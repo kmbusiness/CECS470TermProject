@@ -1,3 +1,4 @@
+#!/usr/local/php5/bin/php-cgi
 <?php
 require_once("DBConn.php");
 session_start();
@@ -116,7 +117,7 @@ if(mb_strlen($pw) > 30) {
 }
 //if there is any input error
 if($input_error_flag) {
-	$error_string = "Location: " . $prev_page . "?errors=" . $first_name_empty . $last_name_empty . $email_empty . $pw_empty . $first_name_too_long . $last_name_too_long . $email_too_long . $pw_too_long . $email_error . $pw_error;
+	$error_string = "Location: /finalproject/" . $prev_page . "?errors=" . $first_name_empty . $last_name_empty . $email_empty . $pw_empty . $first_name_too_long . $last_name_too_long . $email_too_long . $pw_too_long . $email_error . $pw_error;
 	header($error_string);
 }
 
@@ -128,7 +129,7 @@ if(mysqli_num_rows($result) == 1) {
 	mysqli_free_result($result);
 	$_SESSION['login_status'] = 'error_account_exists';
 	mysqli_close($conn);
-	$prev_location = "Location: " . $prev_page;
+	$prev_location = "Location: /finalproject/" . $prev_page;
 	header($prev_location);
 }
 //if account doesn't already exist
@@ -158,7 +159,7 @@ else {
 	// go_to_carpool_page($email);
 	// echo $_SESSION['login_status'] . " email: " . $_SESSION['login_email'];
 	mysqli_close($conn);
-	header("Location: /");
+	header("Location: /finalproject/");
 }
 
 
