@@ -97,6 +97,7 @@ button {
     padding: 14px 20px;
     background-color: #FFC107;
     color: #000;
+    text-decoration: none;
 }
 
 .signinbtn {
@@ -279,14 +280,14 @@ footer {
 
 .ontheright img
 {
-  width:350px; 
+  width:350px;
   height: auto;
 }
 
 .assist img
 {
   clear: right;
-  width:550px; 
+  width:550px;
   height: auto;
   margin-top: 50px;
 }
@@ -315,4 +316,3 @@ footer {
 {
   color: green;
 }
-
