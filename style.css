@@ -259,13 +259,37 @@ footer {
 }
 
 /*----------------------John's CSS ------------------------------*/
+.ontheleft
+{
+  padding: 15px;
+  width:50%;
+  float: left;
+}
 
+.ontheright
+{
+  width:40%;
+  float: right;
+}
 
+.onthebottom
+{
+  clear: both;
+}
 
+.ontheright img
+{
+  width:350px; 
+  height: auto;
+}
 
-
-
-
+.assist img
+{
+  clear: right;
+  width:550px; 
+  height: auto;
+  margin-top: 50px;
+}
 
 /*----------------------Chi's CSS ------------------------------*/
 
@@ -282,3 +306,13 @@ footer {
 
 
 /*----------------------Alex's CSS ------------------------------*/
+.error-warning
+{
+  color: red;
+}
+
+.success-warning
+{
+  color: green;
+}
+
