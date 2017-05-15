@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chapter 9</title>
+	<title>Procedure</title>
 
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -12,8 +12,8 @@
 <body>
 	<?php include 'dentist-nav.php' ?>
 	<div class="container">
-		<p>The Office provides numerous of procedures bonding, braces, and many more!</p>
-		<p>To preview the procedure, select a drop menu below</p>
+		<p>The Office provides numerous of procedures bonding, braces, and many more! </br>
+		To preview the procedure, select a drop menu below and hit Submit</p>
 		<form method="post" action="procedure.php">
 			<input list="procedures" name="procedures">
 			<datalist id="procedures">
@@ -35,6 +35,7 @@
 					if(isset($_POST["sub"]))
 					{
 						$select = $_POST["procedures"];
+						echo("<div id='pro'>");
 						if($select == "Bonding")
 						{
 							echo("Bonding is a procedure that uses adhesive materials to: </br>");
@@ -89,6 +90,7 @@
 							echo("Here is a video on how the procedure is done. </br>");
 							echo('<iframe width="560" height="315" src="https://www.youtube.com/embed/lRXD_4qgK2M" frameborder="0" allowfullscreen></iframe>');
 						}
+						echo("</div>");
 					}
 				}
 			}
