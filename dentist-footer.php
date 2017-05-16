@@ -15,6 +15,7 @@
 		<br/>
 		<a href="procedure.php"> Our Services </a>
 		<br/>
+		<a href="appointment.php"> Make an Appointment </a>
 		
 	</p>
 	
