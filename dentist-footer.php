@@ -7,18 +7,12 @@
 	<p>
 		Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.
 		<br/>
-		<a href="privacy.php"> Our Privacy Policy </a>
-		<br/>
-		<a href="index.php"> Home </a>
-		<br/>
+		<a href="privacy.php"> Our Privacy Policy </a> 
+		<a href="index.php"> Home </a> 
 		<a href="aboutJohn.php"> About Us </a>
-		<br/>
-		<a href="contact.php"> Contact Us </a>
-		<br/>
-		<a href="learn.php"> Learn About Taking Care of Your Teeth </a>
-		<br/>
+		<a href="contact.php"> Contact Us </a>  
+		<a href="learn.php"> Learn About Taking Care of Your Teeth </a> 
 		<a href="procedure.php"> Our Services </a>
-		<br/>
 		<a href="appointment.php"> Make an Appointment </a>
 		
 	</p>
