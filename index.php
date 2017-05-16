@@ -61,12 +61,12 @@ error_reporting(0);
       		<h2>ABOUT US</h2></a>
       	</div>
         <div class="second">
-          <a href="#">
+          <a href="learn.php">
           <i class="fa fa-heartbeat fa-5x"></i>
       		<h2>LEARN</h2></a>
       	</div>
         <div class="third">
-          <a href="#">
+          <a href="contact.php">
           <i class="fa fa-hospital-o fa-5x"></i>
       		<h2>CONTACT</h2></a>
       	</div>
