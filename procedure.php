@@ -11,10 +11,13 @@
 </head>
 <body>
 	<?php include 'dentist-nav.php' ?>
-	<div class="container">
-		<p>The Office provides numerous of procedures bonding, braces, and many more! </br>
-		To preview the procedure, select a drop menu below and hit Submit</p>
-		<form method="post" action="procedure.php">
+	<div class="containerPro">
+		<p>The Office provides numerous of procedures bonding, braces, and many more!</p>
+		<p>To preview the procedure: </br>
+		1) Click the drop menu. </br>
+		2) Select a procedure. </br>
+		3) Click on Submit</p>
+		<form method="post" action="procedure.php" height="50%">
 			<input list="procedures" name="procedures">
 			<datalist id="procedures">
 				<option name="option" value="Bonding">Bonding</option>
