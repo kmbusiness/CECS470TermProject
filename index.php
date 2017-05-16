@@ -1,4 +1,8 @@
 #!/usr/local/php5/bin/php-cgi
+<?php
+session_start();
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,17 +18,20 @@
   <body>
     <?php include 'dentist-nav.php' ?>
 
+    
     <div class="dentist-banner">
       <div class="dentist-signup">
         <div class="log">
           <h2>Sign Into Your <br> Account!</h2>
-          <p><i>Don't have an account?</i><br>
-            <button type="submit" class="signupbtn">SIGN UP!</button>
+          <p><i>Don't have an account?</i>
           </p>
+          <a class="signupbtn" href="signup.php">SIGN UP!</a>
 
         </div>
         <div class="log">
-          <?php include 'loginform.php' ?>
+          <?php 
+
+          include 'loginform.php' ?>
         </div>
 
         <!-- <form action="">
@@ -49,17 +56,17 @@
     <div class="container">
       <section id="dentist-info">
         <div class="first">
-          <a href="#">
+          <a href="aboutJohn.php">
           <i class="fa fa-user-md fa-5x"></i>
       		<h2>ABOUT US</h2></a>
       	</div>
         <div class="second">
-          <a href="#">
+          <a href="learn.php">
           <i class="fa fa-heartbeat fa-5x"></i>
       		<h2>LEARN</h2></a>
       	</div>
         <div class="third">
-          <a href="#">
+          <a href="contact.php">
           <i class="fa fa-hospital-o fa-5x"></i>
       		<h2>CONTACT</h2></a>
       	</div>
@@ -69,19 +76,19 @@
       <section id="dentist-service">
         <div class="left_col">
           <div>
-            <a href="#"><img src="images/services.png" height="200px" width="200px"></a>
+            <a href="procedure.php"><img src="images/services.png" height="200px" width="200px"></a>
             <h2>SERVICES</h2>
             <p>Learn more about our what we do!</p>
-            <a href="#"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
+            <a href="procedure.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
 
         </div>
         <div class="right_col">
           <div>
-            <a href="#"><img src="images/appointments.png" height="200" width="200"></a>
+            <a href="appointments.php"><img src="images/appointments.png" height="200" width="200"></a>
             <h2>APPOINTMENTS</h2>
             <p>Schedule your appointment here!</p>
-            <a href="#"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
+            <a href="appointments.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>
