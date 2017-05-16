@@ -11,7 +11,7 @@
 </head>
 <body>
 	<?php include 'dentist-nav.php' ?>
-	<div class="container">
+	<div class="containerPro">
 		<p>The Office provides numerous of procedures bonding, braces, and many more!</p>
 		<p>To preview the procedure: </br>
 		1) Click the drop menu. </br>
