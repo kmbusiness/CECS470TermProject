@@ -1,4 +1,8 @@
 #!/usr/local/php5/bin/php-cgi
+<?php
+session_start();
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +18,7 @@
   <body>
     <?php include 'dentist-nav.php' ?>
 
+    
     <div class="dentist-banner">
       <div class="dentist-signup">
         <div class="log">
@@ -24,7 +29,9 @@
 
         </div>
         <div class="log">
-          <?php include 'loginform.php' ?>
+          <?php 
+
+          include 'loginform.php' ?>
         </div>
 
         <!-- <form action="">

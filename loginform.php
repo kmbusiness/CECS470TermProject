@@ -16,39 +16,43 @@
 
 	<form action="login.php" method="post">
 			<div class="container-signup">
-				<label for="email">Email</label><br/>
-				<input id="email" type="email" name="email" class="required" />
+				<label for="email">Email</label>
 				<?php
 				if($errors[0] == 1) {
 					echo '
-					<div class="error-warning" style="color:red;">
+					<span class="error-warning" style="color:red;float:right;">
 					Missing email.
-					</div>
+					</span>
 					';
 				}
 				?>
+				<br/>
+				<input id="email" type="email" name="email" class="required" />
+				
 
-					<label for="pw">Password</label><br/>
-					<input id="pw" type="text" name="pw" class="required" />
-					<?php
+					<label for="pw">Password</label><?php
 					if($errors[1] == 1) {
 						echo '
-						<div class="error-warning" style="color:red;">
-						Missing password.
-						</div>
+						<span class="error-warning" style="color:red;float:right;">
+						Missing password. 
+						</span>
 						';
 					}
 					?>
 
+					
+					<br/>
+					<input id="pw" type="password" name="pw" class="required" />
 					<?php
 					if($errors[2] == 1) {
 						echo '
-						<div class="error-warning" style="color:red;">
-						Login error: Check email and password.
-						</div>
+						<span class="error-warning" style="color:red;">
+						Login error
+						</span>
 						';
 					}
 					?>
+					
 					<br>
 					<div class="clearfix">
        			<button type="submit" class="signinbtn">LOG IN</button>
