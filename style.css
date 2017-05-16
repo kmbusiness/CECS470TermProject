@@ -291,6 +291,11 @@ footer {
   margin-top: 50px;
 }
 
+#map
+{
+      margin-top: -400;
+}
+
 /*----------------------Chi's CSS ------------------------------*/
 
 .containerPro {
