@@ -1,10 +1,21 @@
 #!/usr/local/php5/bin/php-cgi
 <?php
-require_once("DBConn.php");
+function connect()
+	{
+		$mysqli = mysqli_connect("cecs-db01.coe.csulb.edu","cecs470m22","leze7u","cecs470og4");
+		$error = mysqli_connect_error();
+		//if there is a connection error...
+		if ($error != null) {
+		  $output = "<p>Unable to connect to database<p>" . $error;
+		  exit($output);
+		  }
+		
+		return $mysqli;
+	}
 session_start();
 $prev_page = $_SESSION['prev_page'];
-$db    = new DBConn();
-$conn  = $db->connect();
+// $db    = new DBConn();
+$conn  = connect();
 
 //declare and initialize variables
 $appointment_user_id = '';
@@ -52,6 +63,7 @@ else {
 	mysqli_close($conn);
 	$prev_location = "Location: " . $prev_page . "?errors=10";
 	header($prev_location);
+	exit();
 }
 
 //escape user inputs
@@ -93,12 +105,14 @@ if(mysqli_num_rows($result) == 1) {
 		mysqli_close($conn);
 		$prev_location = "Location: " . $prev_page . "?errors=00";
 		header($prev_location);
+		exit();
 
 	}
 	else {
 		mysqli_close($conn);
 		$prev_location = "Location: " . $prev_page . "?errors=01";
 		header($prev_location);
+		exit();
 	}
 	// echo $result;
 
