@@ -1,10 +1,22 @@
 #!/usr/local/php5/bin/php-cgi
 <?php
-require_once("DBConn.php");
+// require_once("DBConn.php");
+function connect()
+	{
+		$mysqli = mysqli_connect("cecs-db01.coe.csulb.edu","cecs470m22","leze7u","cecs470og4");
+		$error = mysqli_connect_error();
+		//if there is a connection error...
+		if ($error != null) {
+		  $output = "<p>Unable to connect to database<p>" . $error;
+		  exit($output);
+		  }
+		
+		return $mysqli;
+	}
 session_start();
 $prev_page = $_SESSION['prev_page'];
-$db    = new DBConn();
-$conn  = $db->connect();
+// $db    = new DBConn();
+$conn  = connect();
 
 //declare and initialize variables
 $first_name = '';
@@ -75,19 +87,19 @@ $email_error = '0';
 $pw_error = '0';
 
 $input_error_flag = false;
-if($first_name === '') {
+if($first_name == '') {
 	$first_name_empty = '1';
 	$input_error_flag = true;
 }
-if($last_name === '') {
+if($last_name == '') {
 	$last_name_empty = '1';
 	$input_error_flag = true;
 }
-if($email === '') {
+if($email == '') {
 	$email_empty = '1';
 	$input_error_flag = true;
 }
-if($pw === '') {
+if($pw == '') {
 	$pw_empty = '1';
 	$input_error_flag = true;
 }
@@ -116,9 +128,12 @@ if(mb_strlen($pw) > 30) {
 	$input_error_flag = true;
 }
 //if there is any input error
-if($input_error_flag) {
-	$error_string = "Location: " . $prev_page . "?errors=" . $first_name_empty . $last_name_empty . $email_empty . $pw_empty . $first_name_too_long . $last_name_too_long . $email_too_long . $pw_too_long . $email_error . $pw_error;
+if($input_error_flag === true) {
+	$_SESSION['login_status'] = "account_creation_error";
+	mysqli_close($conn);
+	$error_string = "Location: " . $prev_page . "?errors=" . $first_name_empty . $last_name_empty . $email_empty . $pw_empty . $first_name_too_long . $last_name_too_long . $email_too_long . $pw_too_long . $email_error . $pw_error . '0';
 	header($error_string);
+	exit();
 }
 
 //access db
@@ -129,8 +144,9 @@ if(mysqli_num_rows($result) == 1) {
 	mysqli_free_result($result);
 	$_SESSION['login_status'] = 'error_account_exists';
 	mysqli_close($conn);
-	$prev_location = "Location: " . $prev_page;
-	header($prev_location);
+	$error_string = "Location: " . $prev_page . "?errors=" . $first_name_empty . $last_name_empty . $email_empty . $pw_empty . $first_name_too_long . $last_name_too_long . $email_too_long . $pw_too_long . $email_error . $pw_error . '1';
+	header($error_string);
+	exit();
 }
 //if account doesn't already exist
 else {
@@ -159,7 +175,9 @@ else {
 	// go_to_carpool_page($email);
 	// echo $_SESSION['login_status'] . " email: " . $_SESSION['login_email'];
 	mysqli_close($conn);
-	header("Location: /");
+	$error_string = "Location: " . $prev_page . "?errors=00000000000";
+	header($error_string);
+	exit();
 }
 
 
