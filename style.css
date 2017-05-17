@@ -293,7 +293,7 @@ footer {
 
 #map
 {
-      margin-top: -400;
+      margin-top: -400px;
 }
 
 /*----------------------Chi's CSS ------------------------------*/
@@ -309,7 +309,14 @@ footer {
 
 
 /*----------------------Vinnie's CSS ------------------------------*/
-
+footer {
+	font-size: 12px;
+	background-color: orange;
+}
+footer a 
+{
+	padding-right: 10px;
+}
 
 
 
