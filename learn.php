@@ -1,4 +1,5 @@
 #!/usr/local/php5/bin/php-cgi
+
 <!DOCTYPE html>
 <html lang="en">
 	<!-- <p>Student site - not a commercial site.</p> -->
@@ -39,9 +40,11 @@
 			<br/>
 			<img src="images/act.jpg" alt="Act Restoring Anticavity Flouride Mouthwash"/>
 		</p>
-		</div>
+
 		<?php include 'dentist-footer.php' ?>
+		</div>
 	</body>
+	<!--#echo var="LAST_MODIFIED"-->
 	
 	
 </html>
