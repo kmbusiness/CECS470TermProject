@@ -1,6 +1,9 @@
 
 	<?php
-		session_start();
+		if (!isset($_SESSION))
+      {
+        session_start();
+      }
 		$_SESSION['prev_page'] = 'appointments.php';
 		$errors = null;
 		// echo "login_status: " .$_SESSION['login_status'];
