@@ -1,9 +1,6 @@
 
 	<?php
-		if (!isset($_SESSION))
-      {
-        session_start();
-      }
+		session_start();
 		$_SESSION['prev_page'] = 'index.php';
 		// echo "login status: " . $_SESSION['login_status'] . " login email: " . $_SESSION['login_email'];
 		$errors = null;

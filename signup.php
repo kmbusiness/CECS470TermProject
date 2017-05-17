@@ -14,10 +14,7 @@
   <body>
 
     	<?php
-    		if (!isset($_SESSION))
-		      {
-		        session_start();
-		      }
+    		session_start();
     		$_SESSION['prev_page'] = 'signup.php';
     		$errors = null;
     		// echo "login_status: " .$_SESSION['login_status'];
@@ -35,46 +32,6 @@
         <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Make Your Account</h3>
     	<form action="create_account.php" method="post">
     		<form action="furnitureorder.php" method="post" id="order-form">
-    			<div>
-    				<label for="first_name">First Name</label><br/>
-    				<input id = "first_name" type="text" name="first_name" size="60" class="required" />
-    				<?php
-    				if($errors[0] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Missing first name.
-    					</div>
-    					';
-    				}
-    				if($errors[4] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					First name entry too long.
-    					</div>
-    					';
-    				}
-    				?>
-    			</div>
-    			<div>
-    				<label for="last_name">Last Name</label><br/>
-    				<input id = "last_name" type="text" name="last_name" size="60" class="required" />
-    				<?php
-    				if($errors[1] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Missing last name.
-    					</div>
-    					';
-    				}
-    				if($errors[5] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Last name entry too long.
-    					</div>
-    					';
-    				}
-    				?>
-    			</div>
     			<div>
     				<label for="email">Email</label><br/>
     				<input id = "email" type="email" name="email" size="60" class="required" />
@@ -115,7 +72,46 @@
     				}
     				?>
     			</div>
-    			
+    			<div>
+    				<label for="first_name">First Name</label><br/>
+    				<input id = "first_name" type="text" name="first_name" size="60" class="required" />
+    				<?php
+    				if($errors[0] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Missing first name.
+    					</div>
+    					';
+    				}
+    				if($errors[4] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					First name entry too long.
+    					</div>
+    					';
+    				}
+    				?>
+    			</div>
+    			<div>
+    				<label for="last_name">Last Name</label><br/>
+    				<input id = "last_name" type="text" name="last_name" size="60" class="required" />
+    				<?php
+    				if($errors[1] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Missing last name.
+    					</div>
+    					';
+    				}
+    				if($errors[5] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Last name entry too long.
+    					</div>
+    					';
+    				}
+    				?>
+    			</div>
     			<br>
     			<div>
     				<label>Gender</label><br/>
@@ -125,7 +121,6 @@
     				</select>
     			</div>
     			<br>
-    			<h5>Birthday</h5>
     			<div>
     				<label>Month  </label>
     				<select id="month" name="month" title="month">

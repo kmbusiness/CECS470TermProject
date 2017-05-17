@@ -1,9 +1,6 @@
 #!/usr/local/php5/bin/php-cgi
 <?php
-if (!isset($_SESSION))
-      {
-        session_start();
-      }
+session_start();
 error_reporting(0);
 ?>
 <!DOCTYPE html>
