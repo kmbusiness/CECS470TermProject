@@ -1,14 +1,13 @@
 #!/usr/local/php5/bin/php-cgi
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact Info for Dr. John</title>
-		<h1>Contact Info</h1>
 		<link rel="stylesheet" href="style.css">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 			
 	</head>
 	
@@ -16,6 +15,8 @@
 		<?php include 'dentist-nav.php';?>
 
 		<div class="container">
+
+		<h1>Contact Info</h1>
 
 		<h2> Address </h2>
 		<p>
@@ -31,32 +32,53 @@
 			Sunday: Closed
 		</p>
 		
-		<h2> Dr. John's Cell Phone Number </h2>
+		<h2> Dr. John's Dentistry Phone Number </h2>
 		<p> (562) 487 - 3359 </p>
 		
 		<h2> Email Dr. John </h2>
-		<p> jnguyen@drjohn.html </p>
+		<p> johndentistry@dentalcare.com </p>
 		
 
-		<!-- <div class ="ontheright"> -->
-			<img src="https://maps.googleapis.com/maps/api/staticmap?center=33.782053,-118.115081&zoom=13&size=1000x400&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C33.782053,-118.115081&key=AIzaSyCXo6c4tWE4QiEfIlB8uI1ckPmUU33RACk" style="width: 100%; height: 400px;">
-			<!-- <div id="map" style="width:400px;height:400px;"></div> -->
-		<!-- </div> -->
+		<div class ="ontheright">
+			<div id="map" style="width:400px;height:400px;background:yellow"></div>
+		</div>
 			<script>
-			function myMap() {
-			var mapOptions = {
-				zoom: 10,
-			    center: new google.maps.LatLng(51.5, -0.12),
-			    mapTypeId: google.maps.MapTypeId.HYBRID
-			}
-			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-			}
-			</script>
+			// function myMap() {
+			// var mapOptions = {
+			//     center: new google.maps.LatLng(33.7838, -118.1141),
+			//     zoom: 10,
+			//     mapTypeId: google.maps.MapTypeId.HYBRID
+			// }
+			// var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXo6c4tWE4QiEfIlB8uI1ckPmUU33RACk&callback=myMap"></script>
-	</div>
+			function initMap() {
+	        var myLatLng = {lat: 33.7824958, lng: -118.1678172};
+
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 15,
+	          center: myLatLng
+	        });
+
+	        var marker = new google.maps.Marker({
+	          position: myLatLng,
+	          map: map,
+	          title: 'Hello World!'
+	        });
+			}
+
+
+			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV-ZlsQlaVUxw7A8x9-OOzBal9xr6WQGM&callback=initMap"></script>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<?php include 'dentist-footer.php' ?>
+
+	</div>
 	</body>
 	<!--#echo var="LAST_MODIFIED"-->
 	
