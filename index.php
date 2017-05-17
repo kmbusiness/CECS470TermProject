@@ -14,7 +14,7 @@ error_reporting(0);
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/1eb48d54b5.js"></script>
 
-  </head>
+  </head> 
   <body>
     <?php include 'dentist-nav.php' ?>
 
@@ -22,8 +22,9 @@ error_reporting(0);
     <div class="dentist-banner">
       <div class="dentist-signup">
         <div class="log">
-          <h2>Sign Into Your <br> Account!</h2>
-          <p><i>Don't have an account?</i></p><br>
+          <h2>Sign Into Your <br> Account! <i class="fa fa-sign-in" aria-hidden="true"></i></h2>
+          <p><i>Don't have an account?</i></p>
+          <p class="allen-margin"><i class="fa fa-hand-o-down fa-2x" aria-hidden="true"></i></p>
           <p><a href="signup.php"><span class="signupbtn"><b>SIGN UP!</b></span></a></p>
 
         </div>
@@ -58,7 +59,7 @@ error_reporting(0);
           <a href="aboutJohn.php">
             <h2>ABOUT US</h2>
             <span class="fa-stack fa-4x">
-              <i class="fa fa-user-md fa-stack-2x"></i>
+              <i class="fa fa-user-md fa-stack-2x" aria-hidden="true"></i>
               <!-- <i class="fa fa-user-md fa-stack-1x"></i> -->
             </span>
           </a>
@@ -68,7 +69,7 @@ error_reporting(0);
           <a href="learn.php">
             <h2>LEARN</h2>
             <span class="fa-stack fa-4x">
-              <i class="fa fa-heartbeat fa-stack-2x"></i>
+              <i class="fa fa-heartbeat fa-stack-2x" aria-hidden="true"></i>
               <!-- <i class="fa fa-heartbeat fa-stack-1x"></i> -->
             </span>
       		</a>
@@ -77,7 +78,7 @@ error_reporting(0);
           <a href="contact.php">
             <h2>CONTACT</h2>
             <span class="fa-stack fa-4x">
-              <i class="fa fa-hospital-o fa-stack-2x"></i>
+              <i class="fa fa-hospital-o fa-stack-2x" aria-hidden="true"></i>
               <!-- <i class="fa fa-hospital-o fa-stack-1x"></i> -->
             </span>
       		</a>

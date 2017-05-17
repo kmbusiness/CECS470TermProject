@@ -59,10 +59,11 @@
         <img src="images/team.png" alt = "Dr. John's Team"/> 
     </div>
 
+    
+    
+    </div>
     <div class = "onthebottom">
           <?php include 'dentist-footer.php' ?>
-    </div>
-    
     </div>
   </body>
 </html>
