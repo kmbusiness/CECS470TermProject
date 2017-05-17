@@ -14,7 +14,10 @@
   <body>
 
     	<?php
-    		session_start();
+    		if (!isset($_SESSION))
+		      {
+		        session_start();
+		      }
     		$_SESSION['prev_page'] = 'signup.php';
     		$errors = null;
     		// echo "login_status: " .$_SESSION['login_status'];
@@ -32,46 +35,6 @@
         <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; Make Your Account</h3>
     	<form action="create_account.php" method="post">
     		<form action="furnitureorder.php" method="post" id="order-form">
-    			<div>
-    				<label for="email">Email</label><br/>
-    				<input id = "email" type="email" name="email" size="60" class="required" />
-    				<?php
-    				if($errors[2] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Missing email.
-    					</div>
-    					';
-    				}
-    				if($errors[6] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Email entry too long.
-    					</div>
-    					';
-    				}
-    				?>
-    			</div>
-    			<div>
-    				<label for="pw">Password</label><br/>
-    				<input id = "pw" type="text" name="pw" size="60" class="required" />
-    				<?php
-    				if($errors[3] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Missing password.
-    					</div>
-    					';
-    				}
-    				if($errors[7] == 1) {
-    					echo '
-    					<div class="error-warning" style="color:red;">
-    					Password entry too long.
-    					</div>
-    					';
-    				}
-    				?>
-    			</div>
     			<div>
     				<label for="first_name">First Name</label><br/>
     				<input id = "first_name" type="text" name="first_name" size="60" class="required" />
@@ -112,6 +75,47 @@
     				}
     				?>
     			</div>
+    			<div>
+    				<label for="email">Email</label><br/>
+    				<input id = "email" type="email" name="email" size="60" class="required" />
+    				<?php
+    				if($errors[2] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Missing email.
+    					</div>
+    					';
+    				}
+    				if($errors[6] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Email entry too long.
+    					</div>
+    					';
+    				}
+    				?>
+    			</div>
+    			<div>
+    				<label for="pw">Password</label><br/>
+    				<input id = "pw" type="text" name="pw" size="60" class="required" />
+    				<?php
+    				if($errors[3] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Missing password.
+    					</div>
+    					';
+    				}
+    				if($errors[7] == 1) {
+    					echo '
+    					<div class="error-warning" style="color:red;">
+    					Password entry too long.
+    					</div>
+    					';
+    				}
+    				?>
+    			</div>
+    			
     			<br>
     			<div>
     				<label>Gender</label><br/>
@@ -121,6 +125,7 @@
     				</select>
     			</div>
     			<br>
+    			<h5>Birthday</h5>
     			<div>
     				<label>Month  </label>
     				<select id="month" name="month" title="month">

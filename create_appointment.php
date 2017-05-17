@@ -12,7 +12,10 @@ function connect()
 		
 		return $mysqli;
 	}
-session_start();
+if (!isset($_SESSION))
+      {
+        session_start();
+      }
 $prev_page = $_SESSION['prev_page'];
 // $db    = new DBConn();
 $conn  = connect();
