@@ -11,7 +11,7 @@ ul.topnav {
     text-align: center;
     overflow: hidden;
     background-color: #fff;
-}
+} 
 
 .topnav img {
   width: 7%;
@@ -57,12 +57,13 @@ ul.topnav li.right {
 .dentist-signup {
     float: left;
     position: absolute;
-    margin: 2.5%
+    margin: 1% 2.5%
 }
 
 .dentist-signup h2 {
   text-align: center;
   margin-top: 20%;
+  color: #fff;
 }
 
 .dentist-signup p {
@@ -95,6 +96,8 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .signupbtn {
@@ -121,8 +124,8 @@ button {
 
 .container {
   padding: 5px;
-  width: 960px;
-  margin: 20px auto;
+	width: 960px;
+	margin: 20px auto;
 }
 
 section {
@@ -130,9 +133,9 @@ section {
 }
 
 .first {
-  width: 290px;
-  float: left;
-  padding: 5px 15px;
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
 }
 
 .first i:hover {
@@ -144,10 +147,10 @@ section {
 }
 
 .second {
-  width: 294px;
-  float: left;
-  padding: 5px 15px;
-  margin: 0px 5px 5px 5px;
+	width: 294px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
 }
 
 .second i:hover {
@@ -155,9 +158,9 @@ section {
 }
 
 .third {
-  width: 270px;
-  padding: 5px 15px;
-  float: left;
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
 }
 
 .third i:hover {
@@ -218,6 +221,29 @@ section {
   text-decoration: none;
 }
 
+.form-container {
+  padding: 2%;
+  margin: 3% 28%;
+  background-color: #eff5ff;
+  border-radius: 8px;
+  border-top: 10px solid #595959;
+
+}
+
+.createbtn {
+  background-color: #39e498;
+  color: #000;
+}
+
+.cancelbtn {
+  background-color: #fd5e5e;
+  color: #000;
+}
+
+.allen-margin {
+  margin-bottom: 15%;
+}
+
 
 
 /*----------------------John's CSS ------------------------------*/
@@ -241,7 +267,7 @@ section {
 
 .ontheright img
 {
-  width:550px; 
+  width:550px;
   height: 400px;
   margin-top: 100px;
 }
@@ -249,7 +275,7 @@ section {
 .assist img
 {
   clear: right;
-  width:550px; 
+  width:550px;
   height: 600px;
   margin-top: 175px;
 }
@@ -263,9 +289,9 @@ section {
 
 .containerPro {
   padding: 5px;
-  width: 960px;
-  margin: 20px auto;
-  height: 600px;
+	width: 960px;
+	margin: 20px auto;
+	height: 600px;
 }
 
 
@@ -273,11 +299,11 @@ section {
 
 /*----------------------Vinnie's CSS ------------------------------*/
 footer {
-  font-size: 12px;
-  background-color: #444;
+	font-size: 12px;
+	background-color: #444;
   color: #fff;
   clear: both;
-  padding: 2% 5%;
+	padding: 2% 5%;
   text-align: center;
   font-size: 14px;
 }
@@ -285,7 +311,7 @@ footer a
 {
   text-decoration: none;
   color: #fff;
-  padding-right: 10px;
+	padding-right: 10px;
 }
 
 
@@ -307,30 +333,30 @@ footer a
 
 @media screen and (max-width: 980px) {
 
-  .container {
-    width: 94%;
-  }
-  .first {
-    width: 41%;
-    padding: 1% 4%;
-  }
-  .second {
-    width: 41%;
-    padding: 1% 4%;
-    margin: 0px 0px 5px 5px;
-    float: right;
-  }
+	.container {
+		width: 94%;
+	}
+	.first {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	.second {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
 
-  .third {
-    clear: both;
-    padding: 1% 4%;
-    width: auto;
-    float: none;
-  }
+	.third {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
 
-  header, footer {
-    padding: 1% 4%;
-  }
+	header, footer {
+		padding: 1% 4%;
+	}
 }
 
 /* for 700px or less */
@@ -341,35 +367,35 @@ footer a
     float: none;
   }
 
-  .first {
-    width: auto;
-    float: none;
-  }
+	.first {
+		width: auto;
+		float: none;
+	}
 
-  .second {
-    width: auto;
-    float: none;
-    margin-left: 0px;
-  }
+	.second {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
 
-  .third {
-    width: auto;
-    float: none;
-  }
+	.third {
+		width: auto;
+		float: none;
+	}
 
 }
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-  header {
-    height: auto;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  .third {
-    display: none;
-  }
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	.third {
+		display: none;
+	}
 
 }
