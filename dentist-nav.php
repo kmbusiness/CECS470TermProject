@@ -9,6 +9,9 @@
         session_start();
       }
     if(isset($_SESSION['login_status'])) {
+        if(isset($_SESSION['login_first_name']) && isset($_SESSION['login_last_name'])) {
+            echo '<div>Welcome, '.$_SESSION['login_first_name'].' '.$_SESSION['login_last_name'].'</div>';
+        }
     	if($_SESSION['login_status'] === 'login_successfull' || $_SESSION['login_status'] === 'account_creation_successfull') {
     		echo '<li class="right"><a href="logout.php">Log Out</a></li>';
     	}
