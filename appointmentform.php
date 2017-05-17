@@ -37,6 +37,7 @@
 	?>
 	<form action="create_appointment.php" method="post">
 		<div>
+			<h3><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp; Available Hours</h3>
 			<label>Hour  </label>
 			<select id="hour" name="hour" title="hour">
 				<!-- <option value="00">12 a.m. (midnight)</option>
@@ -46,7 +47,7 @@
 				<option value="04">4 a.m.</option>
 				<option value="05">5 a.m.</option>
 				<option value="06">6 a.m.</option>
-				<option value="07">7 a.m.</option> 
+				<option value="07">7 a.m.</option>
 				<option value="08">8 a.m.</option>-->
 				<option value="09">9 a.m.</option>
 				<option value="10">10 a.m.</option>
@@ -76,6 +77,7 @@
 		</div>
 		<br>
 		<div>
+			<h3><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Available Dates</h3>
 			<label>Month  </label>
 			<select id="month" name="month" title="month">
 				<option value="01">Jan</option>
@@ -128,12 +130,13 @@
 			<label>  Year  </label>
 			<select id="year" name="year" title="year">
 				<option value="2017">2017</option>
-				<option value="2018">2018</option>
+				<option value="2018">2018</option> 
 			</select>
 		</div>
 
 		<br>
 		<div>
+			<h3><i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp; Which Service?</h3>
 			<label>Procedure</label><br/>
 			<select id="type" name="type" title="type">
 				<option name="option" value="Bonding">Bonding</option>
@@ -144,8 +147,7 @@
 				<option name="option" value="Extractions">Extractions</option>
 			</select>
 		</div>
-
-
-   		<input type="submit"  value="Create Appointment">
+		<br>
+		<button type="submit" class="createbtn"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp; Schedule Appointment</button>
 
 	</form>
