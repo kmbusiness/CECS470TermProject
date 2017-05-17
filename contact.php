@@ -8,9 +8,9 @@
 		<title>Contact Info for Dr. John</title>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-			
+
 	</head>
-	
+
 	<body>
 		<?php include 'dentist-nav.php';?>
 
@@ -24,20 +24,20 @@
 			<br/>
 			Long Beach, CA, 90804
 		</p>
-		
+
 		<h2> Office Hours </h2>
 		<p>
 			Monday - Friday: 9am - 5pm <br/>
 			Saturday: 9am - 12pm <br/>
 			Sunday: Closed
 		</p>
-		
+
 		<h2> Dr. John's Dentistry Phone Number </h2>
 		<p> (562) 487 - 3359 </p>
-		
+
 		<h2> Email Dr. John </h2>
 		<p> johndentistry@dentalcare.com </p>
-		
+
 
 		<div class ="ontheright">
 			<div id="map" style="width:400px;height:400px;background:yellow"></div>
@@ -65,7 +65,7 @@
 	          title: 'Hello World!'
 	        });
 			}
-
+ 
 
 			</script>
 			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV-ZlsQlaVUxw7A8x9-OOzBal9xr6WQGM&callback=initMap"></script>
@@ -76,11 +76,10 @@
 	<br>
 	<br>
 	<br>
-	<?php include 'dentist-footer.php' ?>
+
 
 	</div>
+	<?php include 'dentist-footer.php' ?>
 	</body>
-	<!--#echo var="LAST_MODIFIED"-->
-	
-	
+
 </html>
