@@ -18,18 +18,17 @@ error_reporting(0);
   <body>
     <?php include 'dentist-nav.php' ?>
 
-    
+
     <div class="dentist-banner">
       <div class="dentist-signup">
         <div class="log">
           <h2>Sign Into Your <br> Account!</h2>
-          <p><i>Don't have an account?</i>
-          </p>
-          <a class="signupbtn" href="signup.php">SIGN UP!</a>
+          <p><i>Don't have an account?</i></p><br>
+          <p><a href="signup.php"><span class="signupbtn"><b>SIGN UP!</b></span></a></p>
 
         </div>
         <div class="log">
-          <?php 
+          <?php
 
           include 'loginform.php' ?>
         </div>
@@ -57,36 +56,54 @@ error_reporting(0);
       <section id="dentist-info">
         <div class="first">
           <a href="aboutJohn.php">
-          <i class="fa fa-user-md fa-5x"></i>
-      		<h2>ABOUT US</h2></a>
+            <h2>ABOUT US</h2>
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-user-md fa-stack-2x"></i>
+              <!-- <i class="fa fa-user-md fa-stack-1x"></i> -->
+            </span>
+          </a>
+
       	</div>
         <div class="second">
           <a href="learn.php">
-          <i class="fa fa-heartbeat fa-5x"></i>
-      		<h2>LEARN</h2></a>
+            <h2>LEARN</h2>
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-heartbeat fa-stack-2x"></i>
+              <!-- <i class="fa fa-heartbeat fa-stack-1x"></i> -->
+            </span>
+      		</a>
       	</div>
         <div class="third">
           <a href="contact.php">
-          <i class="fa fa-hospital-o fa-5x"></i>
-      		<h2>CONTACT</h2></a>
+            <h2>CONTACT</h2>
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-hospital-o fa-stack-2x"></i>
+              <!-- <i class="fa fa-hospital-o fa-stack-1x"></i> -->
+            </span>
+      		</a>
       	</div>
       </section>
     </div>
+    <br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
     <div class="wrapper">
       <section id="dentist-service">
         <div class="left_col">
           <div>
-            <a href="procedure.php"><img src="images/services.png" height="200px" width="200px"></a>
-            <h2>SERVICES</h2>
-            <p>Learn more about our what we do!</p>
+            <a href="procedure.php"><img src="images/services.png" height="200px" width="200px">
+              <h2>SERVICES</h2>
+            </a>
+            <p>Learn more about what we do!</p>
             <a href="procedure.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
 
         </div>
         <div class="right_col">
           <div>
-            <a href="appointments.php"><img src="images/appointments.png" height="200" width="200"></a>
-            <h2>APPOINTMENTS</h2>
+            <a href="appointments.php"><img src="images/appointments.png" height="200" width="200">
+              <h2>APPOINTMENTS</h2>
+            </a>
             <p>Schedule your appointment here!</p>
             <a href="appointments.php"><i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true"></i></a>
           </div>
