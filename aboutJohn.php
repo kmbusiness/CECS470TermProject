@@ -21,11 +21,11 @@
         <p>
           Growing up Dr. John was always fascinated by dental work. He relized how important the teeth was to the whole body. Having great looking teeth not only booast one's confidence but it could be vital to one's health. The teeth primary responsibility is to assist people eat, the teeth would bite and chew down the food for the body ingest. <br><br>
 
-          So as his fascination grew, he would went on to obtained his undergraduate degree in 1982 at UCI and his DMD at Boston in 1986. While in Bostonhe demonstrated his bright excellence for he graduated in the top 5 percentile.
+          So as his fascination grew, he would went on to obtained his undergraduate degree in 1982 at UCI and his DMD at Boston in 1986. While at Boston he demonstrated his bright excellency for he graduated in the top 5 percentile.
         </p>
 
         <h3>Meet Dr. John</h3>
-        <p>I have been practicing quality dentistry for the past 31 years. In that time I have also take part in education opportunities focusing on the newest technology and treatment options. I want to deliver top quality dentistry to my patients everyday. </p>
+        <p>I have been practicing quality dentistry for the past 31 years. In that time I have also taken part in education opportunities focusing on the newest technology and treatment options. I want to deliver top quality dentistry to my patients. </p>
         <hr>
     </div>
     <div class = "ontheright">
@@ -34,11 +34,11 @@
         <div class = "ontheleft">
       <h2>Meet the Staff</h2>
         <p>
-          At Dr. John's Dentistry, we only have the best staff to assist our patients.  <br><br>
+          At Dr. John's Dentistry, we only have the best staff to server our patients.  <br><br>
         </p>
         <h3>Dental Anesthesiology</h3>
         <h4>Alejandro Morales</h4>
-        <p>Alejandro recieved his Dental Anesthesiologist degree from Loma Linda University School. He currently serves as a part-time clinicial instructor at the Advanced Periodontics Department at USC.</p>
+        <p>Alejandro received his Dental Anesthesiologist degree from Loma Linda University School. He currently serves as a part-time clinicial instructor at the Advanced Periodontics Department at USC.</p>
 
         <h3>Dental Assistants</h3>
           <h4>Vinnie Vu</h4>
