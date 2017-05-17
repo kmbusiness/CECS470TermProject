@@ -132,7 +132,7 @@ button {
     background-color: #FFC107;
     color: #000;
 }
- 
+
 
 .signinbtn {
     float: left;
@@ -201,7 +201,7 @@ section {
 #dentist-info a {
   color: #000;
   text-decoration: none;
-}
+} 
 
 .wrapper {
   width:960px;

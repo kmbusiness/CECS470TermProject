@@ -15,7 +15,8 @@
     <?php include 'dentist-nav.php' ?>
 
 
-    <div class="container">
+    <div class="form-container">
+      <h2><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp; Schedule Your Appointment</h2> 
       <?php include 'appointmentform.php' ?>
     </div>
 
