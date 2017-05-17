@@ -13,7 +13,10 @@ function connect()
 		
 		return $mysqli;
 	}
-session_start();
+if (!isset($_SESSION))
+      {
+        session_start();
+      }
 $prev_page = $_SESSION['prev_page'];
 // $db    = new DBConn();
 $conn  = connect();
@@ -172,11 +175,13 @@ else {
 	$_SESSION['login_status'] = "account_creation_successfull";
 	//update login_email sessions
 	$_SESSION['login_email'] = $email;
+	$_SESSION['login_first_name'] = $first_name;
+	$_SESSION['login_last_name'] = $last_name;
 	// go_to_carpool_page($email);
 	// echo $_SESSION['login_status'] . " email: " . $_SESSION['login_email'];
 	mysqli_close($conn);
 	$error_string = "Location: " . $prev_page . "?errors=00000000000";
-	header($error_string);
+	header("Location: ./");
 	exit();
 }
 

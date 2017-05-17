@@ -13,7 +13,10 @@ function connect()
 		
 		return $mysqli;
 	}
-session_start();
+if (!isset($_SESSION))
+      {
+        session_start();
+      }
 $prev_page = $_SESSION['prev_page'];
 // $db    = new DBConn();
 $conn  = connect();
@@ -61,7 +64,7 @@ if($input_error_flag === true) {
 
 
 $statement = "
-	SELECT pw
+	SELECT pw, firstName, lastName
 	FROM cecs470og4.users
 	WHERE email = '$email'
 ";
@@ -76,6 +79,8 @@ if (password_verify($pw, $ret_pw[0])) {
 	$_SESSION['login_status'] = "login_successfull";
 	//update login_email sessions
 	$_SESSION['login_email'] = $email;
+	$_SESSION['login_first_name'] = $ret_pw[1];
+	$_SESSION['login_last_name'] = $ret_pw[2];
 	$prev_location = "Location: " . $prev_page;
 	header($prev_location);
 	exit();
