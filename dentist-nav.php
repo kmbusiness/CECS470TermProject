@@ -9,9 +9,19 @@
     		echo '<li class="right"><a href="logout.php">Log Out</a></li>';
     	}
     }
-    
+
 
     ?>
     <!-- <li class="right"><a href="#">Sign Up</a></li> -->
-  </ul>
+  </ul> 
+  <div class="allen-container">
+    <ul class="bottomnav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="aboutJohn.php">About</a></li>
+      <li><a href="learn.php">Learn</a></li>
+      <li><a href="procedure.php">Services</a></li>
+      <li><a href="appointments.php">Appointments</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </div>
 </nav>
