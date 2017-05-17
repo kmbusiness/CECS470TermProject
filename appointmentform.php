@@ -13,21 +13,21 @@
 
 	?>
 	<?php
-	if($errors[0] == 1) {
+	if($errors[0] == '1') {
 		echo '
 		<div class="error-warning" style="color:red;">
 		Please login in order to create and appointment.
 		</div>
 		';
 	}
-	if($errors[1] == 1) {
+	if($errors[1] == '1') {
 		echo '
 		<div class="error-warning" style="color:red;">
 		Error creating appointment.
 		</div>
 		';
 	}
-	if($errors[0] == 0 && $errors[1] == 0) {
+	if($errors[0] == '0' && $errors[1] == '0') {
 		echo '
 		<div class="success-warning" style="color:green;">
 		Appointment created successfully.
@@ -39,15 +39,15 @@
 		<div>
 			<label>Hour  </label>
 			<select id="hour" name="hour" title="hour">
-				<option value="00">12 a.m. (midnight)</option>
+				<!-- <option value="00">12 a.m. (midnight)</option>
 				<option value="01">1 a.m.</option>
 				<option value="02">2 a.m.</option>
 				<option value="03">3 a.m.</option>
 				<option value="04">4 a.m.</option>
 				<option value="05">5 a.m.</option>
 				<option value="06">6 a.m.</option>
-				<option value="07">7 a.m.</option>
-				<option value="08">8 a.m.</option>
+				<option value="07">7 a.m.</option> 
+				<option value="08">8 a.m.</option>-->
 				<option value="09">9 a.m.</option>
 				<option value="10">10 a.m.</option>
 				<option value="11">11 a.m.</option>
@@ -55,14 +55,14 @@
 				<option value="13">1 p.m.</option>
 				<option value="14">2 p.m.</option>
 				<option value="15">3 p.m.</option>
-				<option value="16">4 p.m.</option>
+				<!-- <option value="16">4 p.m.</option>
 				<option value="17">5 p.m.</option>
 				<option value="18">6 p.m.</option>
 				<option value="19">7 p.m.</option>
 				<option value="20">8 p.m.</option>
 				<option value="21">9 p.m.</option>
 				<option value="22">10 p.m.</option>
-				<option value="23">11 p.m.</option>
+				<option value="23">11 p.m.</option> -->
 			</select>
 			<label>  Minute  </label>
 			<select id="minute" name="minute" title="minute">

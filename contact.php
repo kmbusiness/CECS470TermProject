@@ -1,5 +1,4 @@
 #!/usr/local/php5/bin/php-cgi
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,7 +7,8 @@
 		<title>Contact Info for Dr. John</title>
 		<h1>Contact Info</h1>
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 			
 	</head>
 	
@@ -38,14 +38,16 @@
 		<p> jnguyen@drjohn.html </p>
 		
 
-		<div class ="ontheright">
-			<div id="map" style="width:400px;height:400px;background:yellow"></div>
-		</div>
+		<!-- <div class ="ontheright"> -->
+			<img src="https://maps.googleapis.com/maps/api/staticmap?center=33.782053,-118.115081&zoom=13&size=1000x400&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C33.782053,-118.115081&key=AIzaSyCXo6c4tWE4QiEfIlB8uI1ckPmUU33RACk" style="width: 100%; height: 400px;">
+			<!-- <div id="map" style="width:400px;height:400px;"></div> -->
+		<!-- </div> -->
 			<script>
 			function myMap() {
 			var mapOptions = {
+				zoom: 10,
 			    center: new google.maps.LatLng(51.5, -0.12),
-			    zoom: 10,
 			    mapTypeId: google.maps.MapTypeId.HYBRID
 			}
 			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -54,6 +56,7 @@
 
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXo6c4tWE4QiEfIlB8uI1ckPmUU33RACk&callback=myMap"></script>
 	</div>
+	<?php include 'dentist-footer.php' ?>
 	</body>
 	<!--#echo var="LAST_MODIFIED"-->
 	
